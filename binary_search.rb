@@ -1,6 +1,9 @@
 class Array
-  def binary_search(left=0, right=self.length-1, item)
+  def binary_search(item)
     return nil if self.empty?
+
+    left=0
+    right=self.length-1
 
     while (left <= right) do
       mid = left + (right - left) / 2
